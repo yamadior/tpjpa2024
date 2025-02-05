@@ -1,4 +1,4 @@
-package Models;
+package models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -10,12 +10,12 @@ public class Employee {
 
         private String name;
 
-        private Models.Department department;
+        private models.Department department;
 
         public Employee() {
         }
 
-        public Employee(String name, Models.Department department) {
+        public Employee(String name, models.Department department) {
             this.name = name;
             this.department = department;
         }
@@ -43,11 +43,11 @@ public class Employee {
         }
 
         @ManyToOne
-        public Models.Department getDepartment() {
+        public models.Department getDepartment() {
             return department;
         }
 
-        public void setDepartment(Models.Department department) {
+        public void setDepartment(models.Department department) {
             this.department = department;
         }
 

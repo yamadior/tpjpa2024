@@ -1,8 +1,8 @@
 package jpa;
 
 
-import Models.Department;
-import Models.Employee;
+import models.Department;
+import models.Employee;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import java.util.List;
